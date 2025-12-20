@@ -706,6 +706,12 @@ export default function App() {
                     <span className="block md:hidden whitespace-pre-line">{'국내최초, 미국식 메모리얼 장례.\n장례식장이 아닌, 원하는곳에서.'}</span>
                     <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
                   </p>
+                ) : index === 2 ? (
+                  /* 영혼의 보살핌: Mobile 2줄 */
+                  <p className="text-neutral-600 text-center leading-relaxed text-lg">
+                    <span className="block md:hidden whitespace-pre-line">{'죽음학과 심리상담을 통합한 의식 케어.\n이별앞에서, 깨어 있도록.'}</span>
+                    <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
+                  </p>
                 ) : (
                   <p className="text-neutral-600 text-center leading-relaxed whitespace-normal md:whitespace-pre-line text-lg">
                     {item.data.desc}
