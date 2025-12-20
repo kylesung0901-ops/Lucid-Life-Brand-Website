@@ -651,8 +651,10 @@ export default function App() {
           {/* Accompany Care */}
           <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 md:p-16 mb-12 border border-white/20">
             <h2 className="text-3xl md:text-4xl mb-6 text-[#eecfa1]">{t.accompany.title}</h2>
-            <p className="text-lg md:text-xl mb-12 text-white/90 whitespace-pre-line leading-relaxed">
-              {t.accompany.subtitle}
+            {/* Mobile: 3줄 / PC: 2줄 */}
+            <p className="text-lg md:text-xl mb-12 text-white/90 leading-relaxed">
+              <span className="block md:hidden whitespace-pre-line">{'임종 전부터 이별 이후까지.\n한 사람의 전 과정을,\n하나의 팀이 돌봅니다.'}</span>
+              <span className="hidden md:block whitespace-pre-line">{t.accompany.subtitle}</span>
             </p>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
               {[t.accompany.before, t.accompany.during, t.accompany.after].map((phase, index) => (
