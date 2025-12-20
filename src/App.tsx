@@ -637,12 +637,14 @@ export default function App() {
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20">
           <div className="mb-16">
-            <p className="text-[#eecfa1] text-xl md:text-2xl my-12 md:my-16 tracking-[0.3em]">{t.hero.brand}</p>
+            <p className="text-[#eecfa1] text-2xl md:text-2xl my-12 md:my-16 tracking-[0.3em]">{t.hero.brand}</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl mb-10 text-white whitespace-pre-line leading-tight">
               {t.hero.title}
             </h1>
-            <p className="text-lg md:text-xl mb-16 text-white/90 whitespace-pre-line leading-relaxed max-w-3xl mx-auto">
-              {t.hero.subtitle}
+            {/* Mobile: 3줄 / PC: 2줄 */}
+            <p className="text-lg md:text-xl mb-16 text-white/90 leading-relaxed max-w-3xl mx-auto">
+              <span className="block md:hidden whitespace-pre-line">{'루시드라이프는 장례를 대신해주는\n곳이 아닙니다.\n서툰 이별 앞에, 함께 서 있는 곳입니다.'}</span>
+              <span className="hidden md:block whitespace-pre-line">{t.hero.subtitle}</span>
             </p>
           </div>
 
