@@ -1209,46 +1209,46 @@ export default function App() {
             {/* Scrollable Content */}
             <div className="overflow-y-auto max-h-[90vh] p-6 lg:p-10">
               {/* Header */}
-              <h3 className="text-xl lg:text-3xl font-medium text-[#d4af7d] mb-1 lg:mb-2">
+              <h3 className="text-lg lg:text-3xl font-medium text-[#d4af7d] mb-1 lg:mb-2">
                 전체 상품 비교
               </h3>
-              <p className="text-sm lg:text-base text-[#808080] mb-6 lg:mb-10">
+              <p className="text-xs lg:text-base text-[#808080] mb-6 lg:mb-10">
                 각 상품의 구성을 한눈에 비교해보세요
               </p>
 
               {/* Comparison Table */}
               <div className="overflow-x-auto">
-                <table className="w-full text-sm lg:text-base">
+                <table className="w-full text-xs lg:text-base">
                   {/* Header Row - Product Names */}
                   <thead>
                     <tr className="border-b border-white/10">
-                      <th className="text-left py-4 lg:py-6 pr-4 lg:pr-6 text-[#808080] font-normal w-[120px] lg:w-[160px]">항목</th>
-                      <th className="text-center py-4 lg:py-6 px-2 lg:px-4">
-                        <div className="text-[#d4af7d] font-medium lg:text-lg">가족장 · 무빈소</div>
+                      <th className="text-left py-3 lg:py-6 pr-3 lg:pr-6 text-[#808080] font-normal text-xs lg:text-base w-[100px] lg:w-[160px]">항목</th>
+                      <th className="text-center py-3 lg:py-6 px-1 lg:px-4">
+                        <div className="text-[#d4af7d] font-medium text-xs lg:text-lg">가족장 · 무빈소</div>
                         <div className="mt-1 lg:mt-2">
-                          <span className="text-2xl lg:text-4xl text-white font-light">150</span>
-                          <span className="text-xs lg:text-sm text-[#808080]">만원</span>
+                          <span className="text-xl lg:text-4xl text-white font-light">150</span>
+                          <span className="text-[10px] lg:text-sm text-[#808080]">만원</span>
                         </div>
                       </th>
-                      <th className="text-center py-4 lg:py-6 px-2 lg:px-4">
-                        <div className="text-[#d4af7d] font-medium lg:text-lg">실용장</div>
+                      <th className="text-center py-3 lg:py-6 px-1 lg:px-4">
+                        <div className="text-[#d4af7d] font-medium text-xs lg:text-lg">실용장</div>
                         <div className="mt-1 lg:mt-2">
-                          <span className="text-2xl lg:text-4xl text-white font-light">290</span>
-                          <span className="text-xs lg:text-sm text-[#808080]">만원</span>
+                          <span className="text-xl lg:text-4xl text-white font-light">290</span>
+                          <span className="text-[10px] lg:text-sm text-[#808080]">만원</span>
                         </div>
                       </th>
-                      <th className="text-center py-4 lg:py-6 px-2 lg:px-4">
-                        <div className="text-[#d4af7d] font-medium lg:text-lg">표준장</div>
+                      <th className="text-center py-3 lg:py-6 px-1 lg:px-4">
+                        <div className="text-[#d4af7d] font-medium text-xs lg:text-lg">표준장</div>
                         <div className="mt-1 lg:mt-2">
-                          <span className="text-2xl lg:text-4xl text-white font-light">360</span>
-                          <span className="text-xs lg:text-sm text-[#808080]">만원</span>
+                          <span className="text-xl lg:text-4xl text-white font-light">360</span>
+                          <span className="text-[10px] lg:text-sm text-[#808080]">만원</span>
                         </div>
                       </th>
-                      <th className="text-center py-4 lg:py-6 px-2 lg:px-4">
-                        <div className="text-[#d4af7d] font-medium lg:text-lg">매장 · 미국식장</div>
+                      <th className="text-center py-3 lg:py-6 px-1 lg:px-4">
+                        <div className="text-[#d4af7d] font-medium text-xs lg:text-lg">매장 · 미국식장</div>
                         <div className="mt-1 lg:mt-2">
-                          <span className="text-2xl lg:text-4xl text-white font-light">450</span>
-                          <span className="text-xs lg:text-sm text-[#808080]">만원</span>
+                          <span className="text-xl lg:text-4xl text-white font-light">450</span>
+                          <span className="text-[10px] lg:text-sm text-[#808080]">만원</span>
                         </div>
                       </th>
                     </tr>
@@ -1272,9 +1272,9 @@ export default function App() {
                       { label: '추가 서비스', values: ['장지 알선', '장지 알선', '장지 알선', '장지 알선'] },
                     ].map((row, idx) => (
                       <tr key={idx} className="border-b border-white/5">
-                        <td className="py-3 lg:py-4 pr-4 lg:pr-6 text-[#808080]">{row.label}</td>
+                        <td className="py-2 lg:py-4 pr-3 lg:pr-6 text-[#808080] text-xs lg:text-base">{row.label}</td>
                         {row.values.map((value, vIdx) => (
-                          <td key={vIdx} className={`py-3 lg:py-4 px-2 lg:px-4 text-center ${value === '—' ? 'text-[#505050]' : 'text-white'}`}>
+                          <td key={vIdx} className={`py-2 lg:py-4 px-1 lg:px-4 text-center text-xs lg:text-base ${value === '—' ? 'text-[#505050]' : 'text-white'}`}>
                             {value}
                           </td>
                         ))}
