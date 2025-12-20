@@ -700,9 +700,17 @@ export default function App() {
               >
                 <item.icon className="w-16 h-16 text-[#8c7b65] mb-8 mx-auto" />
                 <h3 className="text-2xl md:text-3xl mb-6 text-[#2c3e50] text-center">{item.data.title}</h3>
-                <p className="text-neutral-600 text-center leading-relaxed whitespace-normal md:whitespace-pre-line text-lg">
-                  {item.data.desc}
-                </p>
+                {/* 시대의 요구: Mobile 2줄 */}
+                {index === 1 ? (
+                  <p className="text-neutral-600 text-center leading-relaxed text-lg">
+                    <span className="block md:hidden whitespace-pre-line">{'국내최초, 미국식 메모리얼 장례.\n장례식장이 아닌, 원하는곳에서.'}</span>
+                    <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
+                  </p>
+                ) : (
+                  <p className="text-neutral-600 text-center leading-relaxed whitespace-normal md:whitespace-pre-line text-lg">
+                    {item.data.desc}
+                  </p>
+                )}
               </div>
             ))}
           </div>
