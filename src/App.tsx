@@ -659,7 +659,11 @@ export default function App() {
             </h1>
             {/* Mobile: 3줄 / PC: 2줄 */}
             <p className="text-lg md:text-xl mb-16 text-white/90 leading-relaxed max-w-3xl mx-auto">
-              <span className="block md:hidden whitespace-pre-line">{'루시드라이프는 장례를 대신해주는\n곳이 아닙니다.\n서툰 이별 앞에, 함께 서 있는 곳입니다.'}</span>
+              <span className="block md:hidden whitespace-pre-line">
+                {language === 'ko' 
+                  ? '루시드라이프는 장례를 대신해주는\n곳이 아닙니다.\n서툰 이별 앞에, 함께 서 있는 곳입니다.'
+                  : 'LUCID LIFE is not a place\nthat does funerals for you.\nIt is a place that stands with you in awkward farewells.'}
+              </span>
               <span className="hidden md:block whitespace-pre-line">{t.hero.subtitle}</span>
             </p>
           </div>
@@ -669,7 +673,11 @@ export default function App() {
             <h2 className="text-3xl md:text-4xl mb-6 text-[#eecfa1]">{t.accompany.title}</h2>
             {/* Mobile: 3줄 / PC: 2줄 */}
             <p className="text-lg md:text-xl mb-12 text-white/90 leading-relaxed">
-              <span className="block md:hidden whitespace-pre-line">{'임종 전부터 이별 이후까지.\n한 사람의 전 과정을,\n하나의 팀이 돌봅니다.'}</span>
+              <span className="block md:hidden whitespace-pre-line">
+                {language === 'ko'
+                  ? '임종 전부터 이별 이후까지.\n한 사람의 전 과정을,\n하나의 팀이 돌봅니다.'
+                  : 'From before death\nto after farewell.\nOne team cares for the entire process of one person.'}
+              </span>
               <span className="hidden md:block whitespace-pre-line">{t.accompany.subtitle}</span>
             </p>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -713,13 +721,21 @@ export default function App() {
                 {/* 시대의 요구: Mobile 2줄 */}
                 {index === 1 ? (
                   <p className="text-neutral-600 text-center leading-relaxed text-lg">
-                    <span className="block md:hidden whitespace-pre-line">{'국내최초, 미국식 메모리얼 장례.\n장례식장이 아닌, 원하는곳에서.'}</span>
+                    <span className="block md:hidden whitespace-pre-line">
+                      {language === 'ko'
+                        ? '국내최초, 미국식 메모리얼 장례.\n장례식장이 아닌, 원하는곳에서.'
+                        : 'Korea\'s first American-style memorial service.\nNot at funeral homes, but where you want.'}
+                    </span>
                     <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
                   </p>
                 ) : index === 2 ? (
                   /* 영혼의 보살핌: Mobile 3줄 */
                   <p className="text-neutral-600 text-center leading-relaxed text-lg">
-                    <span className="block md:hidden whitespace-pre-line">{'죽음학과 심리상담을\n통합한 의식 케어.\n이별앞에서, 깨어 있도록.'}</span>
+                    <span className="block md:hidden whitespace-pre-line">
+                      {language === 'ko'
+                        ? '죽음학과 심리상담을\n통합한 의식 케어.\n이별앞에서, 깨어 있도록.'
+                        : 'Integrated conscious care\nthrough thanatology and counseling.\nTo stay awake in the face of farewell.'}
+                    </span>
                     <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
                   </p>
                 ) : (
@@ -768,7 +784,11 @@ export default function App() {
                 {/* 감정의 존중: Mobile 2줄 / PC 1줄 */}
                 {index === 2 ? (
                   <p className="text-neutral-600 text-lg leading-relaxed">
-                    <span className="block md:hidden whitespace-pre-line">{'절차보다 사람의 상태를\n먼저 봅니다.'}</span>
+                    <span className="block md:hidden whitespace-pre-line">
+                      {language === 'ko'
+                        ? '절차보다 사람의 상태를\n먼저 봅니다.'
+                        : 'We see people\'s state\nbefore procedures.'}
+                    </span>
                     <span className="hidden md:block">{item.desc}</span>
                   </p>
                 ) : (
@@ -999,7 +1019,11 @@ export default function App() {
                 {/* story1: Mobile 2줄 */}
                 {index === 0 ? (
                   <p className="text-lg text-white/70 leading-relaxed">
-                    <span className="block md:hidden whitespace-pre-line">{'고종황제 입관 의식을\n현대에 복원하다'}</span>
+                    <span className="block md:hidden whitespace-pre-line">
+                      {language === 'ko'
+                        ? '고종황제 입관 의식을\n현대에 복원하다'
+                        : 'Restoring Emperor Gojong\'s\nceremony in modern times'}
+                    </span>
                     <span className="hidden md:block">{story.excerpt}</span>
                   </p>
                 ) : (
