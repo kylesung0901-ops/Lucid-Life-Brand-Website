@@ -582,6 +582,16 @@ export default function App() {
                 </button>
               </div>
 
+              {/* Language Toggle - Mobile */}
+              <button
+                onClick={toggleLanguage}
+                className="md:hidden flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-[#8c7b65]/20 transition-colors text-[#eecfa1]"
+              >
+                <Globe className="w-5 h-5" />
+                <span className="text-sm">{language === 'ko' ? 'EN' : 'KO'}</span>
+              </button>
+
+              {/* Language Toggle - Desktop */}
               <button
                 onClick={toggleLanguage}
                 className="hidden md:flex items-center gap-2 px-4 py-2.5 rounded-lg hover:bg-[#8c7b65]/20 transition-colors text-[#eecfa1]"
