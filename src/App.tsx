@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, Phone, MessageSquare, Heart, Flower2, MapPin, BookOpen, User, FileText, Edit3 } from 'lucide-react';
 import ceoImage from './assets/e0f2c43b934867240dc85cbcb59db1458376a4f8.png';
-import logoImage from './assets/ed9c4979525d1d92a2e2ee261a14686c632bc8de.png';
+// import logoImage from './assets/ed9c4979525d1d92a2e2ee261a14686c632bc8de.png';
+const logoImage = '/logo.png';
 
 type Language = 'ko' | 'en';
 
@@ -663,7 +664,7 @@ export default function App() {
               <img 
                 src={logoImage} 
                 alt="LUCID LIFE" 
-                className="h-20 md:h-28 lg:h-32 w-auto"
+                className="h-28 md:h-36 lg:h-44 w-auto"
               />
             </button>
 
