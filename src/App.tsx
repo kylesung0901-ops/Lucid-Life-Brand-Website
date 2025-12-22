@@ -651,7 +651,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen bg-[#141C2E]">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#141C2E]/95 backdrop-blur-sm border-b border-[#C9A66B]/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
@@ -841,7 +841,7 @@ export default function App() {
       </section>
 
       {/* Difference Section */}
-      <section className="py-32 bg-neutral-50">
+      <section className="py-32 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl mb-8 text-[#141C2E] font-serif-kr">{t.difference.title}</h2>
@@ -874,22 +874,17 @@ export default function App() {
       </section>
 
       {/* Services Section - 함께하는 방식 */}
-      <section id="services" className="py-32 lg:py-40 bg-[#F8F5E6] relative overflow-hidden">
-        {/* Gradient Background */}
-        <div className="absolute inset-0 pointer-events-none" style={{
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(212, 175, 125, 0.05) 0%, transparent 60%)'
-        }} />
-        
+      <section id="services" className="py-32 lg:py-40 bg-[#141C2E] relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 relative">
           {/* Header */}
           <div className="text-center mb-12">
             <p className="text-xs uppercase tracking-[0.25em] mb-3 text-[#C9A66B] opacity-60">
               LUCIDLIFE SERVICE
             </p>
-            <h2 className="text-4xl font-medium mb-4 text-white">
+            <h2 className="text-4xl font-medium mb-4 text-white font-serif-kr">
               {language === 'ko' ? '함께 하는 방식' : 'Our Services'}
             </h2>
-            <p className="text-base font-light text-white/40">
+            <p className="text-base font-light text-white/60">
               {language === 'ko' ? '부담 없이, 상황에 맞게.' : 'Without burden, according to the situation.'}
             </p>
           </div>
@@ -1002,7 +997,7 @@ export default function App() {
       </section>
 
       {/* Three Days Section */}
-      <section id="threedays" className="py-32 bg-neutral-50">
+      <section id="threedays" className="py-32 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl mb-6 text-[#141C2E] font-serif-kr">{t.threedays.title}</h2>
@@ -1034,7 +1029,7 @@ export default function App() {
       </section>
 
       {/* Resting Place Section */}
-      <section id="resting" className="py-32 bg-white">
+      <section id="resting" className="py-32 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl mb-6 text-[#141C2E] font-serif-kr">{t.resting.title}</h2>
@@ -1121,22 +1116,22 @@ export default function App() {
       </section>
 
       {/* CEO Section */}
-      <section id="ceo" className="py-32 bg-white">
+      <section id="ceo" className="py-32 bg-[#141C2E] text-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 md:order-1">
               <div className="mb-8">
-                <h2 className="text-4xl md:text-5xl mb-3 text-[#141C2E] font-serif-kr">{t.ceo.title}</h2>
+                <h2 className="text-4xl md:text-5xl mb-3 text-white font-serif-kr">{t.ceo.title}</h2>
                 <p className="text-xl text-[#C9A66B]">{t.ceo.subtitle}</p>
               </div>
 
-              <blockquote className="text-2xl md:text-3xl mb-12 text-[#141C2E] italic whitespace-pre-line leading-relaxed border-l-4 border-[#C9A66B] pl-8">
+              <blockquote className="text-2xl md:text-3xl mb-12 text-white/90 italic whitespace-pre-line leading-relaxed border-l-4 border-[#C9A66B] pl-8">
                 {t.ceo.quote}
               </blockquote>
 
               <ul className="space-y-4">
                 {t.ceo.credentials.map((credential, index) => (
-                  <li key={index} className="flex items-start gap-4 text-neutral-700">
+                  <li key={index} className="flex items-start gap-4 text-white/80">
                     <div className="w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0 mt-3" />
                     <span className="text-lg leading-relaxed">{credential}</span>
                   </li>
