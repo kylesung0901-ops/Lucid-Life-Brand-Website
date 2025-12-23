@@ -814,8 +814,8 @@ export default function App() {
                   </p>
                 ) : (
                   <p className="text-neutral-600 text-center leading-relaxed whitespace-normal md:whitespace-pre-line text-lg">
-                    {item.data.desc}
-                  </p>
+                  {item.data.desc}
+                </p>
                 )}
               </div>
             ))}
@@ -866,7 +866,7 @@ export default function App() {
                     <span className="hidden md:block">{item.desc}</span>
                   </p>
                 ) : (
-                  <p className="text-neutral-600 text-lg leading-relaxed">{item.desc}</p>
+                <p className="text-neutral-600 text-lg leading-relaxed">{item.desc}</p>
                 )}
               </div>
             ))}
@@ -1096,7 +1096,7 @@ export default function App() {
                     <span className="hidden md:block">{story.excerpt}</span>
                   </p>
                 ) : (
-                  <p className="text-lg text-white/70 leading-relaxed">{story.excerpt}</p>
+                <p className="text-lg text-white/70 leading-relaxed">{story.excerpt}</p>
                 )}
               </div>
             ))}
