@@ -3,5 +3,6 @@ Allow: /
 Allow: /og-image.png
 Allow: /logo.png
 Allow: /favicon.png
+Allow: /Gemini_Generated_Image_s2yzpks2yzpks2yz-removebg-preview.png
 
 

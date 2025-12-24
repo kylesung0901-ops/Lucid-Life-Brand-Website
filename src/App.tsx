@@ -630,8 +630,6 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<ProductDetail | null>(null);
   const [showCompareModal, setShowCompareModal] = useState(false);
-  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
-  const [showTermsModal, setShowTermsModal] = useState(false);
 
   const t = translations[language];
 
@@ -776,10 +774,10 @@ export default function App() {
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-32 bg-[#F8F5E6]">
+      <section className="py-40 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl mb-8 text-[#141C2E] font-serif-kr">{t.pillars.title}</h2>
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-5xl mb-4 text-[#141C2E] font-serif-kr">{t.pillars.title}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
@@ -793,32 +791,16 @@ export default function App() {
                 className="bg-white p-10 lg:p-12 rounded-3xl hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-[#C9A66B]/20"
               >
                 <item.icon className="w-16 h-16 text-[#C9A66B] mb-8 mx-auto" />
-                <h3 className="text-2xl md:text-3xl mb-6 text-[#141C2E] text-center font-serif-kr">{item.data.title}</h3>
-                {/* 시대의 요구: Mobile 2줄 */}
-                {index === 1 ? (
-                  <p className="text-neutral-600 text-center leading-relaxed text-lg">
-                    <span className="block md:hidden whitespace-pre-line">
-                      {language === 'ko'
-                        ? '국내최초, 미국식 메모리얼 장례.\n장례식장이 아닌, 원하는곳에서.'
-                        : 'Korea\'s first American-style memorial service.\nNot at funeral homes, but where you want.'}
-                    </span>
-                    <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
-                  </p>
-                ) : index === 2 ? (
-                  /* 영혼의 보살핌: Mobile 3줄 */
-                  <p className="text-neutral-600 text-center leading-relaxed text-lg">
-                    <span className="block md:hidden whitespace-pre-line">
-                      {language === 'ko'
-                        ? '죽음학과 심리상담을\n통합한 의식 케어.\n이별앞에서, 깨어 있도록.'
-                        : 'Integrated conscious care\nthrough thanatology and counseling.\nTo stay awake in the face of farewell.'}
-                    </span>
-                    <span className="hidden md:block whitespace-pre-line">{item.data.desc}</span>
-                  </p>
-                ) : (
-                  <p className="text-neutral-600 text-center leading-relaxed whitespace-normal md:whitespace-pre-line text-lg">
-                  {item.data.desc}
+                <h3 className="text-2xl md:text-3xl mb-4 text-[#141C2E] text-center font-serif-kr">{item.data.title}</h3>
+                {/* 텍스트 축소 - 키워드 중심 */}
+                <p className="text-neutral-600 text-center leading-relaxed text-base">
+                  {index === 1 
+                    ? (language === 'ko' ? '국내최초 미국식 메모리얼' : 'Korea\'s first American-style memorial')
+                    : index === 2
+                    ? (language === 'ko' ? '죽음학과 심리상담 통합 케어' : 'Integrated thanatology and counseling care')
+                    : (language === 'ko' ? '고종황제 입관 의식 재현' : 'Recreation of Emperor Gojong\'s ceremony')
+                  }
                 </p>
-                )}
               </div>
             ))}
           </div>
@@ -826,17 +808,17 @@ export default function App() {
       </section>
 
       {/* Why Lucid Life Section */}
-      <section className="py-32 bg-[#141C2E] text-white">
+      <section className="py-40 bg-[#141C2E] text-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl mb-12 text-[#C9A66B] font-serif-kr">{t.why.title}</h2>
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-5xl mb-4 text-[#C9A66B] font-serif-kr">{t.why.title}</h2>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-20">
             {[t.why.q1, t.why.q2, t.why.q3].map((item, index) => (
               <div key={index} className="text-center max-w-3xl mx-auto">
-                <h3 className="text-2xl md:text-3xl mb-6 text-white/90">{item.question}</h3>
-                <p className="text-xl md:text-2xl text-[#C9A66B]">{item.answer}</p>
+                <h3 className="text-xl md:text-2xl mb-4 text-white/90 font-serif-kr">{item.question}</h3>
+                <p className="text-lg md:text-xl text-[#C9A66B]">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -844,10 +826,10 @@ export default function App() {
       </section>
 
       {/* Difference Section */}
-      <section className="py-32 bg-[#F8F5E6]">
+      <section className="py-40 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl mb-8 text-[#141C2E] font-serif-kr">{t.difference.title}</h2>
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-5xl mb-4 text-[#141C2E] font-serif-kr">{t.difference.title}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
@@ -877,19 +859,13 @@ export default function App() {
       </section>
 
       {/* Services Section - 함께하는 방식 */}
-      <section id="services" className="py-32 lg:py-40 bg-[#141C2E] relative overflow-hidden">
+      <section id="services" className="py-40 bg-[#141C2E] relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 relative">
           {/* Header */}
-          <div className="text-center mb-12">
-            <p className="text-xs uppercase tracking-[0.25em] mb-3 text-[#C9A66B] opacity-60">
-              LUCIDLIFE SERVICE
-            </p>
-            <h2 className="text-4xl font-medium mb-4 text-white font-serif-kr">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-medium mb-2 text-white font-serif-kr">
               {language === 'ko' ? '함께 하는 방식' : 'Our Services'}
             </h2>
-            <p className="text-base font-light text-white/60">
-              {language === 'ko' ? '부담 없이, 상황에 맞게.' : 'Without burden, according to the situation.'}
-            </p>
           </div>
 
           {/* Product Cards */}
@@ -1000,11 +976,10 @@ export default function App() {
       </section>
 
       {/* Three Days Section */}
-      <section id="threedays" className="py-32 bg-[#F8F5E6]">
+      <section id="threedays" className="py-40 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl mb-6 text-[#141C2E] font-serif-kr">{t.threedays.title}</h2>
-            <p className="text-xl text-[#C9A66B]">{t.threedays.subtitle}</p>
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-5xl mb-4 text-[#141C2E] font-serif-kr">{t.threedays.title}</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 lg:gap-12">
@@ -1022,8 +997,8 @@ export default function App() {
                     <p className="text-lg text-[#C9A66B]">{day.desc}</p>
                   </div>
                 </div>
-                <p className="text-neutral-600 text-lg leading-relaxed whitespace-pre-line pl-2">
-                  {day.details}
+                <p className="text-neutral-600 text-base leading-relaxed pl-2">
+                  {day.details.split('\n').slice(0, 2).join(' ')}
                 </p>
               </div>
             ))}
@@ -1032,11 +1007,10 @@ export default function App() {
       </section>
 
       {/* Resting Place Section */}
-      <section id="resting" className="py-32 bg-[#F8F5E6]">
+      <section id="resting" className="py-40 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl mb-6 text-[#141C2E] font-serif-kr">{t.resting.title}</h2>
-            <p className="text-xl text-[#C9A66B]">{t.resting.subtitle}</p>
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-5xl mb-4 text-[#141C2E] font-serif-kr">{t.resting.title}</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 lg:gap-12">
@@ -1058,9 +1032,8 @@ export default function App() {
                   />
                 </div>
                 <div className="p-10">
-                  <h3 className="text-2xl md:text-3xl mb-4 text-[#141C2E]">{place.data.title}</h3>
-                  <p className="text-lg text-[#C9A66B] mb-4">{place.data.desc}</p>
-                  <p className="text-neutral-600">{place.data.info}</p>
+                  <h3 className="text-2xl md:text-3xl mb-3 text-[#141C2E] font-serif-kr">{place.data.title}</h3>
+                  <p className="text-base text-[#C9A66B]">{place.data.desc}</p>
                 </div>
               </div>
             ))}
@@ -1069,11 +1042,10 @@ export default function App() {
       </section>
 
       {/* Stories Section */}
-      <section id="stories" className="py-32 bg-[#141C2E] text-white">
+      <section id="stories" className="py-40 bg-[#141C2E] text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl mb-6 text-[#C9A66B] font-serif-kr">{t.stories.title}</h2>
-            <p className="text-xl text-white/80">{t.stories.subtitle}</p>
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-5xl mb-4 text-[#C9A66B] font-serif-kr">{t.stories.title}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-10 lg:gap-12 mb-12">
@@ -1086,20 +1058,13 @@ export default function App() {
                 <div className="w-12 h-12 rounded-full bg-[#C9A66B] text-white flex items-center justify-center text-xl mb-8">
                   <BookOpen className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl md:text-3xl mb-6 text-white">{story.title}</h3>
-                {/* story1: Mobile 2줄 */}
-                {index === 0 ? (
-                  <p className="text-lg text-white/70 leading-relaxed">
-                    <span className="block md:hidden whitespace-pre-line">
-                      {language === 'ko'
-                        ? '고종황제 입관 의식을\n현대에 복원하다'
-                        : 'Restoring Emperor Gojong\'s\nceremony in modern times'}
-                    </span>
-                    <span className="hidden md:block">{story.excerpt}</span>
-                  </p>
-                ) : (
-                <p className="text-lg text-white/70 leading-relaxed">{story.excerpt}</p>
-                )}
+                <h3 className="text-xl md:text-2xl mb-4 text-white font-serif-kr">{story.title}</h3>
+                <p className="text-base text-white/70 leading-relaxed">
+                  {index === 0 
+                    ? (language === 'ko' ? '고종황제 입관 의식 현대 복원' : 'Restoring Emperor Gojong\'s ceremony')
+                    : story.excerpt.split('.').slice(0, 1).join('.')
+                  }
+                </p>
               </div>
             ))}
           </div>
@@ -1119,24 +1084,23 @@ export default function App() {
       </section>
 
       {/* CEO Section */}
-      <section id="ceo" className="py-32 bg-[#141C2E] text-white">
+      <section id="ceo" className="py-40 bg-[#141C2E] text-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="order-2 md:order-1">
               <div className="mb-8">
-                <h2 className="text-4xl md:text-5xl mb-3 text-white font-serif-kr">{t.ceo.title}</h2>
-                <p className="text-xl text-[#C9A66B]">{t.ceo.subtitle}</p>
+                <h2 className="text-4xl md:text-5xl mb-2 text-white font-serif-kr">{t.ceo.title}</h2>
               </div>
 
-              <blockquote className="text-2xl md:text-3xl mb-12 text-white/90 italic whitespace-pre-line leading-relaxed border-l-4 border-[#C9A66B] pl-8">
-                {t.ceo.quote}
+              <blockquote className="text-xl md:text-2xl mb-12 text-white/90 italic leading-relaxed border-l-4 border-[#C9A66B] pl-8 font-serif-kr">
+                {t.ceo.quote.split('\n').slice(0, 2).join(' ')}
               </blockquote>
 
-              <ul className="space-y-4">
-                {t.ceo.credentials.map((credential, index) => (
+              <ul className="space-y-3">
+                {t.ceo.credentials.slice(0, 3).map((credential, index) => (
                   <li key={index} className="flex items-start gap-4 text-white/80">
-                    <div className="w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0 mt-3" />
-                    <span className="text-lg leading-relaxed">{credential}</span>
+                    <div className="w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0 mt-2" />
+                    <span className="text-base leading-relaxed">{credential}</span>
                   </li>
                 ))}
               </ul>
@@ -1156,11 +1120,11 @@ export default function App() {
       </section>
 
       {/* Together CTA Section */}
-      <section id="together" className="py-32 bg-[#141C2E]">
+      <section id="together" className="py-40 bg-[#141C2E]">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-6xl mb-8 text-[#C9A66B] font-serif-kr">{t.together.title}</h2>
-          <p className="text-xl md:text-2xl mb-16 text-white/90 whitespace-pre-line leading-relaxed">
-            {t.together.subtitle}
+          <h2 className="text-4xl md:text-6xl mb-6 text-[#C9A66B] font-serif-kr">{t.together.title}</h2>
+          <p className="text-lg md:text-xl mb-12 text-white/90 leading-relaxed">
+            {t.together.subtitle.split('\n').slice(0, 1).join('')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -1190,20 +1154,14 @@ export default function App() {
             <p>{t.footer.address}</p>
             <p>{t.footer.contact}</p>
           </div>
-          {/* 개인정보 처리방침 & 이용약관 버튼 */}
+          {/* 개인정보 처리방침 & 이용약관 - 간단한 텍스트로 표시 */}
           <div className="flex justify-center items-center gap-8 mb-8">
-            <button
-              onClick={() => setShowPrivacyModal(true)}
-              className="text-white/50 hover:text-white underline underline-offset-4 text-sm transition-colors"
-            >
+            <span className="text-white/30 text-xs">
               {language === 'ko' ? '개인정보 처리방침' : 'Privacy Policy'}
-            </button>
-            <button
-              onClick={() => setShowTermsModal(true)}
-              className="text-white/50 hover:text-white underline underline-offset-4 text-sm transition-colors"
-            >
-              {language === 'ko' ? '이용약관양식' : 'Terms and Conditions Template'}
-            </button>
+            </span>
+            <span className="text-white/30 text-xs">
+              {language === 'ko' ? '이용약관' : 'Terms'}
+            </span>
           </div>
           <div className="text-center text-sm border-t border-white/10 pt-8">
             <p>{t.footer.copyright}</p>
@@ -1417,8 +1375,8 @@ export default function App() {
         </div>
       )}
 
-      {/* Privacy Policy Modal */}
-      {showPrivacyModal && (
+      {/* Privacy Policy Modal - Removed per design guidelines */}
+      {false && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           onClick={() => setShowPrivacyModal(false)}
@@ -1710,8 +1668,8 @@ export default function App() {
         </div>
       )}
 
-      {/* Terms of Service Modal */}
-      {showTermsModal && (
+      {/* Terms of Service Modal - Removed per design guidelines */}
+      {false && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           onClick={() => setShowTermsModal(false)}
