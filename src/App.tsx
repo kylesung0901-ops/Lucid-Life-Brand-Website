@@ -28,7 +28,9 @@ const translations = {
     },
     accompany: {
       subtitle: 'Continuum Care',
-      title: '절차가 아니라, 의식으로. 장례는 3일로 끝나지 않습니다. 생전부터 장례 이후까지, 한 사람을 기억하는 전 과정을 함께합니다.',
+      title: '절차가 아니라, 의식으로. 장례는 3일로 끝나지 않습니다.',
+      titleLine2: '생전부터 장례 이후까지,',
+      titleLine3: '한 사람을 기억하는 전 과정을 함께합니다.',
       before: {
         title: '임종 전',
         desc: '서로가 아직 전하지 못한 것이 남아 있을 때',
@@ -41,7 +43,7 @@ const translations = {
         title: '이별 이후',
         desc: '탈상, 제사, 천도제를 지나며 다시 일상으로 돌아갈 때',
       },
-      link: '이별은 하루로 끝나지 않습니다 >',
+      link: '이별은 하루로 끝나지 않습니다',
     },
     pillars: {
       title: '세 가지 축',
@@ -226,7 +228,9 @@ const translations = {
     },
     accompany: {
       subtitle: 'Continuum Care',
-      title: 'Not a procedure, but a ceremony. A funeral does not end in 3 days. From before life to after the funeral, we accompany the entire process of remembering one person.',
+      title: 'Not a procedure, but a ceremony. A funeral does not end in 3 days.',
+      titleLine2: 'From before life to after the funeral,',
+      titleLine3: 'we accompany the entire process of remembering one person.',
       before: {
         title: 'Before Passing',
         desc: 'When there are still things we haven\'t said to each other',
@@ -239,7 +243,7 @@ const translations = {
         title: 'After Farewell',
         desc: 'When returning to daily life after the end of mourning, ancestral rites, and memorial services',
       },
-      link: 'Farewell does not end in a day >',
+      link: 'Farewell does not end in a day',
     },
     pillars: {
       title: 'Three Pillars',
@@ -1005,28 +1009,35 @@ export default function App() {
       </section>
 
       {/* Care Section - 이별동행케어 */}
-      <section id="care" className="py-40 bg-[#F8F5E6]">
+      <section id="care" className="py-20 md:py-32 lg:py-40 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-sm text-[#C9A66B] mb-4 tracking-wider">{t.accompany.subtitle}</p>
-            <h2 className="text-4xl md:text-5xl mb-6 text-[#141C2E] font-serif-kr leading-relaxed">
-              {t.accompany.title}
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3 text-[#141C2E] font-serif-kr">
+              이별동행케어
             </h2>
+            <p className="text-xs md:text-sm lg:text-base text-[#C9A66B] mb-6 md:mb-8 tracking-wider">
+              {t.accompany.subtitle}
+            </p>
+            <div className="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8 md:mb-10 text-[#141C2E] font-serif-kr leading-relaxed">
+              <p className="mb-2 md:mb-3">{t.accompany.title}</p>
+              <p className="mb-2 md:mb-3">{t.accompany.titleLine2}</p>
+              <p>{t.accompany.titleLine3}</p>
+            </div>
           </div>
 
           {/* 타임라인 */}
-          <div className="max-w-4xl mx-auto space-y-8 mb-12">
+          <div className="max-w-4xl mx-auto space-y-6 md:space-y-8 mb-10 md:mb-12">
             {[
               { data: t.accompany.before, period: '[임종 전]' },
               { data: t.accompany.during, period: '[장례 중]' },
               { data: t.accompany.after, period: '[이별 이후]' },
             ].map((item, index) => (
-              <div key={index} className="flex gap-6">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-sm text-[#C9A66B] font-medium">{item.period}</span>
+              <div key={index} className="flex gap-4 md:gap-6">
+                <div className="flex-shrink-0 w-20 md:w-24 text-right">
+                  <span className="text-xs md:text-sm lg:text-base text-[#C9A66B] font-medium">{item.period}</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-lg text-[#141C2E] leading-relaxed">{item.data.desc}</p>
+                  <p className="text-base md:text-lg lg:text-xl text-[#141C2E] leading-relaxed">{item.data.desc}</p>
                 </div>
               </div>
             ))}
@@ -1035,7 +1046,7 @@ export default function App() {
           <div className="text-center">
             <a 
               href="#"
-              className="text-[#C9A66B] text-base hover:text-[#C9A66B]/80 transition-colors"
+              className="text-sm md:text-base lg:text-lg text-[#C9A66B] hover:text-[#C9A66B]/80 transition-colors"
             >
               {t.accompany.link}
             </a>
