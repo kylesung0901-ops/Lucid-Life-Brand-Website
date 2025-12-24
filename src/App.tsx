@@ -1012,10 +1012,10 @@ export default function App() {
       <section id="care" className="py-20 md:py-32 lg:py-40 bg-[#F8F5E6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3 text-[#141C2E] font-serif-kr">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 md:mb-3 text-[#141C2E] font-serif-kr">
               이별동행케어
             </h2>
-            <p className="text-xs md:text-sm lg:text-base text-[#C9A66B] mb-6 md:mb-8 tracking-wider">
+            <p className="text-sm md:text-base lg:text-lg xl:text-xl text-[#C9A66B] mb-6 md:mb-8 tracking-wider">
               {t.accompany.subtitle}
             </p>
             <div className="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8 md:mb-10 text-[#141C2E] font-serif-kr leading-relaxed">
