@@ -176,7 +176,8 @@ const translations = {
     ceo: {
       quote: '이별은 끝이 아니라, 한 사람을 기억하는 시작입니다.',
       quoteLine1: '이별은 끝이 아니라,',
-      quoteLine2: '한 사람을 기억하는 시작입니다.',
+      quoteLine2: '한 사람을 기억하는',
+      quoteLine3: '시작입니다.',
       name: '도원',
       title: '루시드라이프 대표',
       cta: '루시드 함께하기',
@@ -378,7 +379,8 @@ const translations = {
     ceo: {
       quote: 'Farewell is not an end, but the beginning of remembering one person.',
       quoteLine1: 'Farewell is not an end,',
-      quoteLine2: 'but the beginning of remembering one person.',
+      quoteLine2: 'but the beginning of',
+      quoteLine3: 'remembering one person.',
       name: 'Dowon',
       title: 'CEO, Lucid Life',
       cta: 'Join Lucid Life',
@@ -1065,9 +1067,10 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="order-2 md:order-1">
-              <blockquote className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-8 md:mb-10 text-white leading-relaxed border-l-4 border-[#C9A66B] pl-6 md:pl-8 font-serif-kr">
+              <blockquote className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-8 md:mb-10 text-white leading-relaxed border-l-4 border-[#C9A66B] pl-6 md:pl-8 font-serif-kr">
                 <p className="mb-2 md:mb-3">{t.ceo.quoteLine1}</p>
-                <p>{t.ceo.quoteLine2}</p>
+                <p className="mb-2 md:mb-3">{t.ceo.quoteLine2}</p>
+                <p>{t.ceo.quoteLine3}</p>
               </blockquote>
               
               <div className="mb-8 md:mb-10">
