@@ -764,19 +764,19 @@ export default function App() {
         <div className="absolute inset-0 bg-[#141C2E]/40" />
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-32">
-          <div className="mb-20 space-y-8">
+          <div className="mb-20 space-y-8 lg:space-y-16">
             {/* 메인 타이틀 */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl text-white leading-tight font-serif-kr font-semibold">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl text-white leading-tight lg:leading-relaxed font-serif-kr font-semibold">
               {t.hero.title}
             </h1>
             
             {/* 서브 타이틀 */}
-            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-serif-kr">
+            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-serif-kr lg:mt-8">
               {t.hero.subtitle}
             </p>
             
             {/* 시그니처 */}
-            <p className="text-sm md:text-base text-[#C9A66B] tracking-wider mt-16">
+            <p className="text-sm md:text-base text-[#C9A66B] tracking-wider mt-16 lg:mt-24">
               {t.hero.signature}
             </p>
           </div>
