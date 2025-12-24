@@ -894,6 +894,15 @@ export default function App() {
                       </span>
                       <span className="md:hidden">{day.details}</span>
                     </>
+                  ) : index === 1 ? (
+                    <>
+                      <span className="hidden md:block">
+                        가장 아름다운 마지막 모습을<br />
+                        기억할 수 있도록,<br />
+                        최고의 예를 갖춘 입관식
+                      </span>
+                      <span className="md:hidden">{day.details}</span>
+                    </>
                   ) : (
                     day.details
                   )}
