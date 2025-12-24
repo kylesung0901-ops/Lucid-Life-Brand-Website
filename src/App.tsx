@@ -739,14 +739,14 @@ export default function App() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-[#141C2E]/98 backdrop-blur-md pt-28 md:pt-32">
+        <div className="fixed inset-0 z-40 bg-[#141C2E]/98 backdrop-blur-md pt-28 md:pt-40">
           <button
             onClick={() => setIsMenuOpen(false)}
             className="absolute top-6 right-6 p-2 text-[#C9A66B] hover:bg-[#C9A66B]/20 rounded-lg transition-colors"
           >
             <X className="w-7 h-7" />
           </button>
-          <div className="flex flex-col items-center justify-center h-full gap-4 md:gap-5 px-6 pb-28">
+          <div className="flex flex-col items-center justify-start md:justify-center h-full gap-3 md:gap-3.5 px-6 pb-28 md:pt-0">
             {[
               { id: 'hero', label: t.nav.lucidlife },
               { id: 'services', label: t.nav.services },
@@ -759,7 +759,7 @@ export default function App() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-2xl md:text-3xl text-[#C9A66B] hover:text-[#C9A66B]/80 transition-colors tracking-wide"
+                className="text-2xl md:text-2xl text-[#C9A66B] hover:text-[#C9A66B]/80 transition-colors tracking-wide"
               >
                 {item.label}
               </button>
