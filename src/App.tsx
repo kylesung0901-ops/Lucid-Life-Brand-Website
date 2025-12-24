@@ -704,9 +704,13 @@ export default function App() {
               <a
                 href="#"
                 onClick={(e) => { e.preventDefault(); window.open('https://pf.kakao.com/_your_kakao_id', '_blank'); }}
-                className="flex items-center text-[#C9A66B] hover:text-[#C9A66B]/80 transition-colors"
+                className="flex items-center hover:opacity-80 transition-opacity"
               >
-                <MessageSquare className="w-5 h-5 md:w-6 md:h-6" />
+                <img 
+                  src="/KakaoTalk_20251219_152146545_20.png" 
+                  alt="KakaoTalk" 
+                  className="w-6 h-6 md:w-7 md:h-7"
+                />
               </a>
 
               {/* 언어 토글 */}
