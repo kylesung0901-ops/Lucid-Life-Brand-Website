@@ -1032,12 +1032,12 @@ export default function App() {
               { data: t.accompany.during, period: '[장례 중]' },
               { data: t.accompany.after, period: '[이별 이후]' },
             ].map((item, index) => (
-              <div key={index} className="flex gap-4 md:gap-6">
-                <div className="flex-shrink-0 w-20 md:w-24 text-right">
-                  <span className="text-xs md:text-sm lg:text-base text-[#C9A66B] font-medium">{item.period}</span>
+              <div key={index} className="flex gap-4 md:gap-6 items-start">
+                <div className="flex-shrink-0 w-24 md:w-28 lg:w-32 text-left">
+                  <span className="text-sm md:text-base lg:text-lg xl:text-xl text-[#C9A66B] font-medium">{item.period}</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-base md:text-lg lg:text-xl text-[#141C2E] leading-relaxed">{item.data.desc}</p>
+                  <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-[#141C2E] leading-relaxed">{item.data.desc}</p>
                 </div>
               </div>
             ))}
