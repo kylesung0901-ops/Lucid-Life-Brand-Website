@@ -823,7 +823,7 @@ export default function App() {
               { data: t.services.family, id: 'family' },
               { data: t.services.practical, id: 'practical' },
               { data: t.services.standard, id: 'standard' },
-              { data: t.services.burial, id: 'burial' },
+              { data: t.services.burial, id: 'premium' },
             ].map((product, index) => (
               <div
                 key={index}
@@ -855,7 +855,11 @@ export default function App() {
             <div>
               <a 
                 href="#"
-                className="text-[#C9A66B] text-sm hover:text-[#C9A66B]/80 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSelectedProduct(getProductDetails(language).premium);
+                }}
+                className="text-[#C9A66B] text-sm hover:text-[#C9A66B]/80 transition-colors cursor-pointer"
               >
                 {t.services.learnMore}
               </a>
@@ -1103,51 +1107,51 @@ export default function App() {
           
           {/* Modal Content */}
           <div 
-            className="relative bg-[#1e1e1e] rounded-lg w-full max-w-[400px] md:max-w-[400px] max-h-[85vh] overflow-hidden shadow-2xl"
+            className="relative bg-[#1e1e1e] rounded-lg w-full max-w-[500px] md:max-w-[600px] lg:max-w-[700px] max-h-[90vh] overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
               onClick={() => setSelectedProduct(null)}
-              className="absolute top-3 right-3 z-10 w-7 h-7 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors"
+              className="absolute top-4 right-4 z-10 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-black/50 border border-white/20 hover:bg-white/10 transition-colors"
             >
-              <X className="w-4 h-4 text-white/50" />
+              <X className="w-5 h-5 md:w-6 md:h-6 text-white" />
             </button>
 
             {/* Scrollable Content */}
-            <div className="overflow-y-auto max-h-[85vh] p-4 md:p-5">
+            <div className="overflow-y-auto max-h-[90vh] p-6 md:p-8 lg:p-10">
               {/* Header - 제목 */}
-              <h3 className="text-base md:text-lg font-medium text-[#C9A66B] mb-1">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-[#C9A66B] mb-2 md:mb-3">
                 {selectedProduct.name}
               </h3>
               
               {/* Tagline */}
-              <p className="text-xs md:text-sm text-[#808080] mb-3">"{selectedProduct.tagline}"</p>
+              <p className="text-sm md:text-base lg:text-lg text-white/80 mb-4 md:mb-5">"{selectedProduct.tagline}"</p>
 
               {/* Price */}
-              <div className="mb-2">
-                <span className="text-3xl md:text-4xl font-light text-white">{selectedProduct.price}</span>
-                <span className="text-xs md:text-sm text-[#808080] ml-1">{language === 'ko' ? '만원부터' : '0k KRW~'}</span>
+              <div className="mb-4 md:mb-5">
+                <span className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#C9A66B]">{selectedProduct.price}</span>
+                <span className="text-base md:text-lg lg:text-xl text-white/70 ml-2">{language === 'ko' ? '만원부터' : '0k KRW~'}</span>
               </div>
 
               {/* Description */}
-              <p className="text-xs md:text-sm text-[#808080] mb-5 pb-5 border-b border-white/10">
+              <p className="text-sm md:text-base text-white/70 mb-6 md:mb-8 pb-6 md:pb-8 border-b border-white/10 leading-relaxed">
                 {selectedProduct.description}
               </p>
 
               {/* Items List - 구성 항목 */}
               <div className="mb-4">
-                <p className="text-xs md:text-sm text-[#C9A66B] mb-4">{language === 'ko' ? '구성 항목' : 'Composition Items'}</p>
+                <p className="text-base md:text-lg lg:text-xl text-[#C9A66B] mb-6 md:mb-8 font-medium">{language === 'ko' ? '구성 항목' : 'Composition Items'}</p>
                 <div className="space-y-0">
                   {selectedProduct.items.map((item, idx) => (
                     <div 
                       key={idx} 
-                      className="flex justify-between items-center py-2 md:py-3 border-b border-white/5 gap-2 md:gap-4"
+                      className="flex justify-between items-center py-3 md:py-4 lg:py-5 border-b border-white/10 gap-4 md:gap-6"
                     >
-                      <span className="text-xs md:text-sm text-[#808080] flex-shrink-0" style={{ minWidth: '90px', maxWidth: '120px' }}>{item.label}</span>
-                      <span className={`text-xs md:text-sm text-right flex-1 ${
-                        item.value === '—' ? 'text-[#505050]' : 
-                        item.value.startsWith('(') ? 'text-[#606060]' : 'text-white'
+                      <span className="text-sm md:text-base lg:text-lg text-white/70 flex-shrink-0" style={{ minWidth: '120px', maxWidth: '180px' }}>{item.label}</span>
+                      <span className={`text-sm md:text-base lg:text-lg text-right flex-1 ${
+                        item.value === '—' ? 'text-white/40' : 
+                        item.value.startsWith('(') ? 'text-white/60' : 'text-white'
                       }`} style={{ wordBreak: 'keep-all', whiteSpace: 'normal', textAlign: 'right' }}>
                         {item.value}
                       </span>
