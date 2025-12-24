@@ -198,6 +198,7 @@ const translations = {
       copyright: 'Copyright © 2025 Lucid Life. All rights reserved.',
       membershipBtn: '멤버십 무료 가입',
       privacyBtn: '개인정보처리방침',
+      termsBtn: '이용약관',
     },
     privacyPolicy: {
       title: '개인정보처리방침',
@@ -287,6 +288,59 @@ o 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에
 개인정보침해신고센터 (privacy.kisa.or.kr / 국번 없이 118)
 대검찰청 사이버범죄수사단 (www.spo.go.kr / 02-3480-2000)
 경찰청 사이버안전국 (www.ctrc.go.kr/ 국번 없이 182)`,
+    },
+    termsOfService: {
+      title: '이용약관',
+      content: `제1조(목적)
+이 약관은 루시드라이프(전자상거래 사업자)가 운영하는 루시드라이프_사이버 몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리/ 의무 및 책임사항을 규정함을 목적으로 합니다.
+※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+
+제2조(정의)
+① "몰"이란 루시드라이프 회사가 재화 또는 용역(이하 "재화 등"이라 함)을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.
+② "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+③ '회원'이라 함은 "몰"에 회원등록을 한 자로서, 계속적으로 "몰"이 제공하는 서비스를 이용할 수 있는 자를 말합니다.
+④ '비회원'이라 함은 회원에 가입하지 않고 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.
+
+제3조 (약관 등의 명시와 설명 및 개정)
+① "몰"은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호, 모사전송번호, 전자우편주소, 사업자등록번호, 통신판매업 신고번호, 개인정보보호책임자등을 이용자가 쉽게 알 수 있도록 루시드라이프 사이버몰의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.
+② "몰은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회?배송책임?환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.
+③ "몰"은 「전자상거래 등에서의 소비자보호에 관한 법률」, 「약관의 규제에 관한 법률」, 「전자문서 및 전자거래기본법」, 「전자금융거래법」, 「전자서명법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「방문판매 등에 관한 법률」, 「소비자기본법」 등 관련 법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+④ "몰"이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 "몰"은 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다.
+⑤ "몰"이 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로 적용됩니다. 다만 이미 계약을 체결한 이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간 내에 "몰"에 송신하여 "몰"의 동의를 받은 경우에는 개정약관 조항이 적용됩니다.
+⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따릅니다.
+
+제4조(서비스의 제공 및 변경)
+① "몰"은 다음과 같은 업무를 수행합니다.
+1. 재화 또는 용역에 대한 정보 제공 및 구매계약의 체결
+2. 구매계약이 체결된 재화 또는 용역의 배송
+3. 기타 "몰"이 정하는 업무
+② "몰"은 재화 또는 용역의 품절 또는 기술적 사양의 변경 등의 경우에는 장차 체결되는 계약에 의해 제공할 재화 또는 용역의 내용을 변경할 수 있습니다. 이 경우에는 변경된 재화 또는 용역의 내용 및 제공일자를 명시하여 현재의 재화 또는 용역의 내용을 게시한 곳에 즉시 공지합니다.
+③ "몰"이 제공하기로 이용자와 계약을 체결한 서비스의 내용을 재화등의 품절 또는 기술적 사양의 변경 등의 사유로 변경할 경우에는 그 사유를 이용자에게 통지 가능한 주소로 즉시 통지합니다.
+④ 전항의 경우 "몰"은 이로 인하여 이용자가 입은 손해를 배상합니다. 다만, "몰"이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+
+제5조(서비스의 중단)
+① "몰"은 컴퓨터 등 정보통신설비의 보수점검 교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다.
+② "몰"은 제1항의 사유로 서비스의 제공이 일시적으로 중단됨으로 인하여 이용자 또는 제3자가 입은 손해에 대하여 배상합니다. 단, "몰"이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+③ 사업종목의 전환, 사업의 포기, 업체 간의 통합 등의 이유로 서비스를 제공할 수 없게 되는 경우에는 "몰"은 제8조에 정한 방법으로 이용자에게 통지하고 당초 "몰"에서 제시한 조건에 따라 소비자에게 보상합니다. 다만, "몰"이 보상기준 등을 고지하지 아니한 경우에는 이용자들의 마일리지 또는 적립금 등을 "몰"에서 통용되는 통화가치에 상응하는 현물 또는 현금으로 이용자에게 지급합니다.
+
+제6조(회원가입)
+① 이용자는 "몰"이 정한 가입 양식에 따라 회원정보를 기입한 후 이 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청합니다.
+② "몰"은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각 호에 해당하지 않는 한 회원으로 등록합니다.
+1. 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조제3항에 의한 회원자격 상실 후 3년이 경과한 자로서 "몰"의 회원재가입 승낙을 얻은 경우에는 예외로 한다.
+2. 등록 내용에 허위, 기재누락, 오기가 있는 경우
+3. 기타 회원으로 등록하는 것이 "몰"의 기술상 현저히 지장이 있다고 판단되는 경우
+③ 회원가입계약의 성립 시기는 "몰"의 승낙이 회원에게 도달한 시점으로 합니다.
+④ 회원은 회원가입 시 등록한 사항에 변경이 있는 경우, 상당한 기간 이내에 "몰"에 대하여 회원정보 수정 등의 방법으로 그 변경사항을 알려야 합니다.
+
+제7조(회원 탈퇴 및 자격 상실 등)
+① 회원은 "몰"에 언제든지 탈퇴를 요청할 수 있으며 "몰"은 즉시 회원탈퇴를 처리합니다.
+② 회원이 다음 각 호의 사유에 해당하는 경우, "몰"은 회원자격을 제한 및 정지시킬 수 있습니다.
+1. 가입 신청 시에 허위 내용을 등록한 경우
+2. "몰"을 이용하여 구입한 재화 등의 대금, 기타 "몰"이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않는 경우
+3. 다른 사람의 "몰" 이용을 방해하거나 그 정보를 도용하는 등 전자상거래 질서를 위협하는 경우
+4. "몰"을 이용하여 법령 또는 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우
+③ "몰"이 회원 자격을 제한?정지 시킨 후, 동일한 행위가 2회 이상 반복되거나 30일 이내에 그 사유가 시정되지 아니하는 경우 "몰"은 회원자격을 상실시킬 수 있습니다.
+④ "몰"이 회원자격을 상실시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 최소한 30일 이상의 기간을 정하여 소명할 기회를 부여합니다.`,
     },
     floating: {
       call: 'Call',
@@ -493,6 +547,7 @@ o 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에
       copyright: 'Copyright © 2025 Lucid Life. All rights reserved.',
       membershipBtn: 'Free Membership Registration',
       privacyBtn: 'Privacy Policy',
+      termsBtn: 'Terms of Service',
     },
     privacyPolicy: {
       title: 'Privacy Policy',
@@ -582,6 +637,59 @@ o For other reports or consultations on personal information infringement, pleas
 Personal Information Infringement Report Center (privacy.kisa.or.kr / 118 without area code)
 Supreme Prosecutors' Office Cyber Crime Investigation Division (www.spo.go.kr / 02-3480-2000)
 National Police Agency Cyber Safety Bureau (www.ctrc.go.kr / 182 without area code)`,
+    },
+    termsOfService: {
+      title: 'Terms of Service',
+      content: `Article 1 (Purpose)
+These Terms and Conditions are intended to stipulate the rights, obligations, and responsibilities of the cyber mall and users in using the Internet-related services (hereinafter referred to as "Services") provided by Lucid Life Cyber Mall (hereinafter referred to as "Mall") operated by Lucid Life (e-commerce business operator).
+※ "These Terms and Conditions shall apply to e-commerce using PC communication, wireless, etc., unless it is contrary to its nature."
+
+Article 2 (Definitions)
+① "Mall" means a virtual business place set up by Lucid Life Company to trade goods or services (hereinafter referred to as "goods, etc.") using information and communication facilities such as computers, and also refers to the business operator operating the cyber mall.
+② "User" means members and non-members who access the "Mall" and receive services provided by the "Mall" in accordance with these Terms and Conditions.
+③ "Member" means a person who has registered as a member and can continuously use the services provided by the "Mall".
+④ "Non-member" means a person who uses the services provided by the "Mall" without joining as a member.
+
+Article 3 (Display and Explanation of Terms and Conditions and Amendment)
+① The "Mall" posts the contents of these Terms and Conditions, company name and representative name, business location address (including address where consumer complaints can be handled), phone number, facsimile number, e-mail address, business registration number, communication sales business report number, personal information protection manager, etc. on the initial service screen (front page) of Lucid Life Cyber Mall so that users can easily know them. However, the contents of the Terms and Conditions can be viewed by users through the connection screen.
+② The "Mall" must provide a separate connection screen or pop-up screen so that users can understand important contents such as withdrawal of offer, delivery responsibility, refund conditions, etc. stipulated in the Terms and Conditions before users agree to the Terms and Conditions, and obtain user confirmation.
+③ The "Mall" may amend these Terms and Conditions within the scope that does not violate related laws such as the "Consumer Protection Act in Electronic Commerce", "Act on Regulation of Terms and Conditions", "Basic Act on Electronic Documents and Electronic Commerce", "Electronic Financial Transactions Act", "Electronic Signature Act", "Act on Promotion of Information and Communications Network Utilization and Information Protection", "Door-to-Door Sales Act", and "Framework Act on Consumers".
+④ When the "Mall" amends the Terms and Conditions, it shall specify the application date and reason for amendment and notify them together with the current Terms and Conditions on the initial screen of the Mall from 7 days before the application date to the day before the application date. However, if the Terms and Conditions are changed unfavorably to users, they shall be notified with a grace period of at least 30 days in advance. In this case, the "Mall" clearly compares the contents before and after the amendment so that users can easily understand.
+⑤ When the "Mall" amends the Terms and Conditions, the amended Terms and Conditions apply only to contracts concluded after the application date, and the Terms and Conditions before the amendment apply to contracts already concluded before that. However, if a user who has already entered into a contract wants to be subject to the provisions of the amended Terms and Conditions and sends it to the "Mall" within the notice period of the amended Terms and Conditions under paragraph 3 and receives the consent of the "Mall", the provisions of the amended Terms and Conditions apply.
+⑥ Matters not specified in these Terms and Conditions and interpretation of these Terms and Conditions shall be in accordance with the Consumer Protection Act in Electronic Commerce, the Act on Regulation of Terms and Conditions, the Consumer Protection Guidelines in Electronic Commerce, etc. determined by the Fair Trade Commission, and related laws or commercial practices.
+
+Article 4 (Provision and Change of Services)
+① The "Mall" performs the following tasks:
+1. Provision of information on goods or services and conclusion of purchase contracts
+2. Delivery of goods or services for which purchase contracts have been concluded
+3. Other tasks determined by the "Mall"
+② The "Mall" may change the contents of goods or services to be provided by contracts to be concluded in the future in case of out of stock or change in technical specifications of goods or services. In this case, the contents and delivery date of the changed goods or services shall be specified and immediately notified in the place where the contents of the current goods or services are posted.
+③ If the "Mall" changes the contents of the service that it has contracted to provide to users due to reasons such as out of stock of goods, etc. or change in technical specifications, it shall immediately notify the user at the address where notification is possible.
+④ In the case of the preceding paragraph, the "Mall" compensates for damages suffered by users. However, this does not apply if the "Mall" proves that there was no intention or negligence.
+
+Article 5 (Suspension of Services)
+① The "Mall" may temporarily suspend the provision of services in case of reasons such as maintenance, replacement, and failure of information and communication facilities such as computers, or interruption of communication.
+② The "Mall" compensates for damages suffered by users or third parties due to temporary suspension of service provision due to the reasons in paragraph 1. However, this does not apply if the "Mall" proves that there was no intention or negligence.
+③ In cases where services cannot be provided due to reasons such as conversion of business items, abandonment of business, merger between companies, etc., the "Mall" notifies users in the manner specified in Article 8 and compensates consumers according to the conditions initially presented by the "Mall". However, if the "Mall" does not notify the compensation standards, etc., it pays users mileage or points, etc. in kind or cash equivalent to the currency value used in the "Mall".
+
+Article 6 (Membership Registration)
+① Users apply for membership by filling in member information according to the registration form set by the "Mall" and expressing their intention to agree to these Terms and Conditions.
+② The "Mall" registers as a member among users who have applied for membership as in paragraph 1, unless they fall under any of the following:
+1. If the applicant has lost membership qualification under Article 7, Paragraph 3 of these Terms and Conditions, except for cases where 3 years have passed since the loss of membership qualification under Article 7, Paragraph 3 and approval for re-registration as a member of the "Mall" has been obtained.
+2. If there is false information, omission, or error in the registration contents
+3. If it is judged that registering as a member significantly hinders the "Mall" technically
+③ The time of establishment of the membership registration contract is when the approval of the "Mall" reaches the member.
+④ If there is a change in the matters registered at the time of membership registration, the member must notify the "Mall" of the change by modifying member information, etc. within a reasonable period.
+
+Article 7 (Member Withdrawal and Loss of Qualification)
+① Members may request withdrawal from the "Mall" at any time, and the "Mall" immediately processes member withdrawal.
+② If a member falls under any of the following reasons, the "Mall" may limit or suspend membership:
+1. If false information is registered at the time of membership application
+2. If the member does not pay the price of goods, etc. purchased using the "Mall" or other debts related to the use of the "Mall" on time
+3. If interfering with others' use of the "Mall" or stealing their information, etc., threatening the order of e-commerce
+4. If using the "Mall" to commit acts prohibited by laws or these Terms and Conditions or contrary to public order and morals
+③ If the same act is repeated 2 or more times or the reason is not corrected within 30 days after the "Mall" limits or suspends membership, the "Mall" may lose membership.
+④ When the "Mall" loses membership, it deletes the membership registration. In this case, the member is notified, and an opportunity to explain is given by setting a period of at least 30 days before deleting the membership registration.`,
     },
     floating: {
       call: 'Call',
@@ -1334,12 +1442,19 @@ export default function App() {
             >
               {t.footer.membershipBtn}
             </button>
-            <div>
+            <div className="flex items-center justify-center gap-4">
               <button
                 onClick={() => setShowPrivacyModal(true)}
                 className="text-xs md:text-sm lg:text-base text-white/60 hover:text-white/80 transition-colors underline"
               >
                 {t.footer.privacyBtn}
+              </button>
+              <span className="text-white/40">|</span>
+              <button
+                onClick={() => setShowTermsModal(true)}
+                className="text-xs md:text-sm lg:text-base text-white/60 hover:text-white/80 transition-colors underline"
+              >
+                {t.footer.termsBtn}
               </button>
             </div>
           </div>
@@ -1381,6 +1496,44 @@ export default function App() {
               {/* Content */}
               <div className="prose prose-sm md:prose-base lg:prose-lg max-w-none text-[#141C2E] leading-relaxed whitespace-pre-line">
                 <p className="text-sm md:text-base lg:text-lg">{t.privacyPolicy.content}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Terms of Service Modal */}
+      {showTermsModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          onClick={() => setShowTermsModal(false)}
+        >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/80" />
+          
+          {/* Modal Content */}
+          <div 
+            className="relative bg-[#F8F5E6] rounded-lg w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setShowTermsModal(false)}
+              className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-[#141C2E]/10 hover:bg-[#141C2E]/20 transition-colors"
+            >
+              <X className="w-5 h-5 text-[#141C2E]" />
+            </button>
+
+            {/* Scrollable Content */}
+            <div className="overflow-y-auto max-h-[90vh] p-6 md:p-8 lg:p-10">
+              {/* Title */}
+              <h3 className="text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 text-[#141C2E] font-serif-kr font-semibold">
+                {t.termsOfService.title}
+              </h3>
+              
+              {/* Content */}
+              <div className="prose prose-sm md:prose-base lg:prose-lg max-w-none text-[#141C2E] leading-relaxed whitespace-pre-line">
+                <p className="text-sm md:text-base lg:text-lg">{t.termsOfService.content}</p>
               </div>
             </div>
           </div>
